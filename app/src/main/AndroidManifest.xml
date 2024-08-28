@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.madcampw2">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MadCampW2">
+        <activity
+            android:name=".MainActivity"
+            android:exported="true" />
+        <activity
+            android:name=".letterread.Bigimage"
+            android:exported="true" />
+        <activity
+            android:name=".LetterRead"
+            android:exported="true" />
+        <activity
+            android:name=".LetterSend"
+            android:exported="true" />
+        <activity
+            android:name=".LetterDecoration"
+            android:exported="true" />
+        <activity
+            android:name=".MateLetter"
+            android:exported="true" />
+        <activity
+            android:name=".MateList"
+            android:exported="true" />
+        <activity
+            android:name=".LoginSdk"
+            android:exported="true"/>
+        <activity
+            android:name=".SplashActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.kakao.sdk.auth.AuthCodeHandlerActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW" />
+                <category android:name="android.intent.category.DEFAULT" />
+                <category android:name="android.intent.category.BROWSABLE" />
+
+                <data android:host="oauth"
+                    android:scheme="@string/kakao_app_key2" />
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>

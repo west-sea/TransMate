@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        android:layout_width="341dp"
+        android:layout_height="250dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/profile3"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_bias="0.45"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- 상단 레이아웃 -->
+    <LinearLayout
+        android:id="@+id/topLayout"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@drawable/tab1frag2"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHeight_percent="0.1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintVertical_bias="0.05"
+        >
+
+        <!-- 상단 레이아웃 내용 -->
+
+    </LinearLayout>
+
+    <!-- 하단 레이아웃 -->
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imageView3"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginStart="4dp"
+        android:src="@drawable/testimg"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.05"
+        app:layout_constraintVertical_bias="0.35"
+        tools:srcCompat="@tools:sample/avatars[0]" />
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:orientation="horizontal"
+        android:padding="1dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.125"
+        app:layout_constraintStart_toEndOf="@+id/imageView3"
+        app:layout_constraintTop_toTopOf="@+id/imageView3">
+
+        <TextView
+            android:id="@+id/name3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:fontFamily="@font/scdream8"
+            android:textSize="30sp"
+            android:text="name" />
+
+        <TextView
+            android:id="@+id/nickname3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/scdream8"
+            android:padding="5dp"
+            android:text="nickname" />
+        <TextView
+            android:id="@+id/score3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:fontFamily="@font/scdream5"
+            android:text=" " />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="1dp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/school3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/scdream5"
+            android:text="school" />
+
+        <TextView
+            android:id="@+id/major3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/scdream5"
+            android:text="major" />
+
+        <TextView
+            android:id="@+id/stdid3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/scdream5"
+            android:text="id" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3">
+
+        <TextView
+            android:id="@+id/phonenum3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="10sp"
+            android:padding="5dp"
+            android:fontFamily="@font/scdream5"
+            android:text="phonenum" />
+
+        <TextView
+            android:id="@+id/email3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:textSize="10sp"
+            android:fontFamily="@font/scdream5"
+            android:text="email" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/state3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="전 팀원"
+        android:fontFamily="@font/scdream5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+
+        app:layout_constraintHorizontal_bias="0.87"
+        app:layout_constraintVertical_bias="0.65" />
+
+    <GridLayout
+        android:id="@+id/gridLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.15"
+        app:layout_constraintVertical_bias="0.6"
+
+        android:columnCount="4"
+        android:padding="5dp"
+        android:rowCount="3"
+        app:layout_constraintTop_toBottomOf="@+id/imageView">
+
+        <TextView
+            android:id="@+id/sk13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_item"
+            android:padding="5dp"
+            android:textColor="#a2abb6"
+            android:text="JAVA">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sk23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_item"
+            android:padding="5dp"
+            android:textColor="#a2abb6"
+            android:text="DB">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sk33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_item"
+            android:padding="5dp"
+            android:textColor="#a2abb6"
+            android:text="python">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sk43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_item"
+            android:padding="5dp"
+            android:textColor="#a2abb6"
+            android:text="Algorithm">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sk53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_item"
+            android:padding="5dp"
+            android:textColor="#a2abb6"
+            android:text="HTML">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sk63"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_item"
+            android:padding="5dp"
+            android:textColor="#a2abb6"
+            android:text="C#">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sk73"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_item"
+            android:padding="5dp"
+            android:textColor="#a2abb6"
+            android:text="Flutter">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sk83"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_item"
+            android:padding="5dp"
+            android:textColor="#a2abb6"
+            android:text="JavaScript">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sk93"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_item"
+            android:padding="5dp"
+            android:textColor="#a2abb6"
+            android:text="C++">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sk103"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_item"
+            android:padding="5dp"
+            android:textColor="#a2abb6"
+            android:text="AI">
+
+        </TextView>
+
+        <TextView
+            android:id="@+id/sk113"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/category_item"
+            android:padding="5dp"
+            android:textColor="#a2abb6"
+            android:text="kotlin">
+
+        </TextView>
+
+
+
+    </GridLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

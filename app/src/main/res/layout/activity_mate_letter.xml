@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MateLetter">
+
+    <Button
+        android:id="@+id/letterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ff0000"
+        android:fontFamily="@font/sdmisaeng"
+        android:rotation="-12"
+        android:text="To. who?"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        app:layout_constraintStart_toEndOf="@+id/type3"
+        app:layout_constraintTop_toBottomOf="@+id/bottomLayout" />
+
+    <LinearLayout
+        android:id="@+id/bottomLayout"
+        android:layout_width="350dp"
+        android:layout_height="520dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/letter"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.454"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/writeLetterTextView"
+            android:layout_width="237dp"
+            android:layout_height="348dp"
+            android:layout_marginStart="55dp"
+            android:layout_marginTop="65dp"
+            android:layout_marginEnd="40dp"
+            android:inputType="textMultiLine"
+            android:fontFamily="@font/sdmisaeng"
+            android:gravity="start"
+            android:hint="당신의 메이트 에게 편지를 써주세요.\n"
+            android:textSize="13.7dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/type1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="테마1"
+        app:layout_constraintStart_toStartOf="@+id/bottomLayout"
+        app:layout_constraintTop_toBottomOf="@+id/bottomLayout" />
+
+    <Button
+        android:id="@+id/type2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="테마2"
+        app:layout_constraintStart_toEndOf="@+id/type1"
+        app:layout_constraintTop_toBottomOf="@+id/bottomLayout" />
+
+    <Button
+        android:id="@+id/type3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="테마3"
+        app:layout_constraintStart_toEndOf="@+id/type2"
+        app:layout_constraintTop_toBottomOf="@+id/bottomLayout" />
+
+    <Button
+        android:id="@+id/type4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="테마4"
+        app:layout_constraintStart_toStartOf="@+id/type1"
+        app:layout_constraintTop_toBottomOf="@+id/type2" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
